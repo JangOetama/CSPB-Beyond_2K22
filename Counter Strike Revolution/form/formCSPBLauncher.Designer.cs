@@ -47,6 +47,7 @@ namespace Counter_Strike_Point_Blank
             this.txtboxPassword = new System.Windows.Forms.TextBox();
             this.webCSPB = new System.Windows.Forms.WebBrowser();
             this.picCheck = new System.Windows.Forms.PictureBox();
+            this.picStart = new System.Windows.Forms.PictureBox();
             this.lblRegistry = new System.Windows.Forms.Label();
             this.lblForget = new System.Windows.Forms.Label();
             this.lblNick = new System.Windows.Forms.Label();
@@ -64,9 +65,21 @@ namespace Counter_Strike_Point_Blank
             ((System.ComponentModel.ISupportInitialize)(this.progressFile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressTotal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCheck)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStart)).BeginInit();
             this.SuspendLayout();
+            this.btnStart.ImagePositionActive = "2,327";
+            this.btnStart.ImagePositionDisabled = "2,490";
+            this.btnStart.ImagePositionHover = "2,165";
+            this.btnStart.ImagePositionNormal = "2,2";
+            this.btnStart.ImageTogglePositionActive = null;
+            this.btnStart.ImageTogglePositionDisabled = null;
+            this.btnStart.ImageTogglePositionHover = null;
+            this.btnStart.ImageTogglePositionNormal = null;
+            this.btnStart.Name = "btnStart";
+            this.btnStart.SizeButton = "346,158";
 
-            this.picCheck.BackgroundImage = new Bitmap(CJDW.CropImage(new Bitmap(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheck.png")), new Rectangle(new Point(2, 490), new Size(221, 158))), new Size(508, 451));
+            this.picCheck.BackgroundImage = CJDW.CropImage(new Bitmap(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheck.png")), new Rectangle(new Point(2, 490), new Size(221, 158)));
+            this.picStart.BackgroundImage = CJDW.CropImage(new Bitmap(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnStart.png")), new Rectangle(new Point(2, 490), new Size(346, 158)));
             this.chckboxLogin.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheckBoxLogin.png");
             this.chckboxLogin.ImageButtonToggle = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheckBoxLogin.png");
             this.btnLogin2.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnLogin.png");
@@ -221,6 +234,16 @@ namespace Counter_Strike_Point_Blank
             this.picCheck.Size = new System.Drawing.Size(106, 76);
             this.picCheck.TabIndex = 13;
             this.picCheck.TabStop = false;
+            // 
+            // picStart
+            // 
+            this.picStart.BackColor = System.Drawing.Color.Transparent;
+            this.picStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picStart.Location = new System.Drawing.Point(621, 451);
+            this.picStart.Name = "picStart";
+            this.picStart.Size = new System.Drawing.Size(166, 76);
+            this.picStart.TabIndex = 13;
+            this.picStart.TabStop = false;
             // 
             // lblRegistry
             // 
@@ -544,6 +567,7 @@ namespace Counter_Strike_Point_Blank
             this.Controls.Add(this.lblFile);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.picCheck);
+            this.Controls.Add(this.picStart);
             this.Controls.Add(this.picMoverDown);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -558,6 +582,7 @@ namespace Counter_Strike_Point_Blank
             ((System.ComponentModel.ISupportInitialize)(this.progressFile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressTotal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCheck)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -582,6 +607,7 @@ namespace Counter_Strike_Point_Blank
         private System.Windows.Forms.WebBrowser webCSPB;
         private Evolved_Counter_Strike.uc.button btnStart;
         private Evolved_Counter_Strike.uc.button btnCheck;
+        private System.Windows.Forms.PictureBox picStart;
         private System.Windows.Forms.PictureBox picCheck;
         private Evolved_Counter_Strike.uc.button exitLogin;
         private Evolved_Counter_Strike.uc.button btnClose;

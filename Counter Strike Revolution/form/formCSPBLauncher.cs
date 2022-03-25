@@ -118,7 +118,7 @@ namespace Counter_Strike_Point_Blank
 
         private void check_MouseClick(object sender, MouseEventArgs e)
         {
-            btnStart.Enabled = false;
+            btnStart.Visible = false;
             btnCheck.Visible = false;
             cCurrent = -1;
             cFP = 0;
@@ -156,7 +156,7 @@ namespace Counter_Strike_Point_Blank
                 progressFile.Width = 463;
                 progressTotal.Width = 463;
                 btnCheck.Visible = true;
-                btnStart.Enabled = true;
+                btnStart.Visible = true;
                 lblStatus.Text = "Anda bisa memulai permainan sekarang!";
                 lblFile2.Text = "";
             }
@@ -221,6 +221,7 @@ namespace Counter_Strike_Point_Blank
             btnCheck.Visible = false;
             btnStart.Visible = false;
             picCheck.Visible = false;
+            picStart.Visible = false;
             picMoverUp.Size = new Size(793, 437);
         }
         private void logout()
@@ -263,6 +264,7 @@ namespace Counter_Strike_Point_Blank
             btnCheck.Visible = true;
             btnStart.Visible = true;
             picCheck.Visible = true;
+            picStart.Visible = true;
             picMoverUp.Size = new Size(793, 26);
         }
 
@@ -312,6 +314,7 @@ namespace Counter_Strike_Point_Blank
                 btnCheck.Visible = true;
                 btnStart.Visible = true;
                 picCheck.Visible = true;
+                picStart.Visible = true;
                 picMoverUp.Size = new Size(793, 26);
             }
         }

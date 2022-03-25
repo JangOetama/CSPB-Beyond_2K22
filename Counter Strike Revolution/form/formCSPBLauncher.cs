@@ -146,7 +146,7 @@ namespace Counter_Strike_Point_Blank
             cCurrent++;
             if (cCurrent < cFiles.Length)
             {
-                lblFile2.Text = cFiles[cCurrent];
+                lblFile2.Text = cFiles[cCurrent].Replace(AppDomain.CurrentDomain.BaseDirectory, null);
                 cFP = 0;
                 progressTotal.Width = cCurrent * 463 / cFiles.Length;
                 timer2.Start();
@@ -162,8 +162,7 @@ namespace Counter_Strike_Point_Blank
             }
             timer1.Stop();
         }
-
-        string[] cFiles = File.ReadAllLines("database.txt");
+        string[] cFiles = Directory.GetFileSystemEntries(AppDomain.CurrentDomain.BaseDirectory, "*", SearchOption.AllDirectories);
         int cCurrent = 0;
         int cFP = 0;
 

@@ -96,4 +96,28 @@ class CJDW
             i.Font = new Font(i.Font.FontFamily.Name, ratio * i.Font.Size);
         }
     }
+    public static Bitmap CropImage(Bitmap source, Rectangle section)
+    {
+        var bitmap = new Bitmap(section.Width, section.Height);
+        using (var g = Graphics.FromImage(bitmap))
+        {
+            g.DrawImage(source, 0, 0, section, GraphicsUnit.Pixel);
+            return bitmap;
+        }
+    }
+    public static Bitmap GrayScaleFilter(Bitmap image)
+    {
+        Bitmap grayScale = new Bitmap(image.Width, image.Height);
+
+        for (Int32 y = 0; y < grayScale.Height; y++)
+            for (Int32 x = 0; x < grayScale.Width; x++)
+            {
+                System.Drawing.Color c = image.GetPixel(x, y);
+
+                Int32 gs = (Int32)(c.R * 0.3 + c.G * 0.59 + c.B * 0.11);
+
+                grayScale.SetPixel(x, y, System.Drawing.Color.FromArgb(gs, gs, gs));
+            }
+        return grayScale;
+    }
 }

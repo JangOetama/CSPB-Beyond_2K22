@@ -59,6 +59,23 @@ namespace Counter_Strike_Point_Blank
             ((System.ComponentModel.ISupportInitialize)(this.picCreateAccount)).BeginInit();
             this.SuspendLayout();
             // 
+            // pic nya
+            //
+
+            this.buttonRegistry.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnSignup.png");
+            this.buttonCheckBoxAccept.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnUnCheckBox.png");
+            this.buttonCheckBoxAccept.ImageButtonToggle = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheckBox.png");
+            this.buttonShowRePassword.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnShowPass.png");
+            this.buttonShowRePassword.ImageButtonToggle = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnShowPass1.png");
+            this.buttonShowPassword.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnShowPass.png");
+            this.buttonShowPassword.ImageButtonToggle = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnShowPass1.png");
+            this.buttonCheckEmail.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnChck.png");
+            this.buttonCheckID.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnChck.png");
+            this.picCreateAccount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picCreateAccount.BackgroundImage")));
+            this.btnBackToHome.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnSignup.png");
+            this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\backSignUp.png");
+
+            // 
             // textboxID
             // 
             this.textboxID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -220,7 +237,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.buttonRegistry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.buttonRegistry.BackColor = System.Drawing.Color.Transparent;
-            this.buttonRegistry.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnSignup.png");
             this.buttonRegistry.ImageButtonToggle = null;
             this.buttonRegistry.ImagePositionActive = "0,0";
             this.buttonRegistry.ImagePositionDisabled = "0,0";
@@ -248,8 +264,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.buttonCheckBoxAccept.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.buttonCheckBoxAccept.BackColor = System.Drawing.Color.Transparent;
-            this.buttonCheckBoxAccept.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnUnCheckBox.png");
-            this.buttonCheckBoxAccept.ImageButtonToggle = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheckBox.png");
             this.buttonCheckBoxAccept.ImagePositionActive = "0,52";
             this.buttonCheckBoxAccept.ImagePositionDisabled = "0,0";
             this.buttonCheckBoxAccept.ImagePositionHover = "0,26";
@@ -275,8 +289,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.buttonShowRePassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.buttonShowRePassword.BackColor = System.Drawing.Color.Transparent;
-            this.buttonShowRePassword.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnShowPass.png");
-            this.buttonShowRePassword.ImageButtonToggle = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnShowPass1.png");
             this.buttonShowRePassword.ImagePositionActive = "0,0";
             this.buttonShowRePassword.ImagePositionDisabled = "0,0";
             this.buttonShowRePassword.ImagePositionHover = "0,19";
@@ -303,8 +315,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.buttonShowPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.buttonShowPassword.BackColor = System.Drawing.Color.Transparent;
-            this.buttonShowPassword.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnShowPass.png");
-            this.buttonShowPassword.ImageButtonToggle = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnShowPass1.png");
             this.buttonShowPassword.ImagePositionActive = "0,0";
             this.buttonShowPassword.ImagePositionDisabled = "0,0";
             this.buttonShowPassword.ImagePositionHover = "0,19";
@@ -331,11 +341,10 @@ namespace Counter_Strike_Point_Blank
             // 
             this.buttonCheckEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.buttonCheckEmail.BackColor = System.Drawing.Color.Transparent;
-            this.buttonCheckEmail.ImageButton = ((System.Drawing.Image)(resources.GetObject("buttonCheckEmail.ImageButton")));
             this.buttonCheckEmail.ImageButtonToggle = null;
             this.buttonCheckEmail.ImagePositionActive = "0,0";
             this.buttonCheckEmail.ImagePositionDisabled = "0,0";
-            this.buttonCheckEmail.ImagePositionHover = "0,164";
+            this.buttonCheckEmail.ImagePositionHover = "0,60";
             this.buttonCheckEmail.ImagePositionNormal = "0,0";
             this.buttonCheckEmail.ImageTogglePositionActive = null;
             this.buttonCheckEmail.ImageTogglePositionDisabled = null;
@@ -344,14 +353,14 @@ namespace Counter_Strike_Point_Blank
             this.buttonCheckEmail.Location = new System.Drawing.Point(597, 388);
             this.buttonCheckEmail.Name = "buttonCheckEmail";
             this.buttonCheckEmail.Size = new System.Drawing.Size(62, 57);
-            this.buttonCheckEmail.SizeButton = "168, 164";
+            this.buttonCheckEmail.SizeButton = "62, 60";
             this.buttonCheckEmail.TabIndex = 0;
-            this.buttonCheckEmail.TextButton = null;
-            this.buttonCheckEmail.TextFont = null;
-            this.buttonCheckEmail.TextFontColorActive = null;
-            this.buttonCheckEmail.TextFontColorDisabled = null;
-            this.buttonCheckEmail.TextFontColorHover = null;
-            this.buttonCheckEmail.TextFontColorNormal = null;
+            this.buttonCheckEmail.TextButton = "CHECK";
+            this.buttonCheckEmail.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCheckEmail.TextFontColorActive = "#777777";
+            this.buttonCheckEmail.TextFontColorDisabled = "#777777";
+            this.buttonCheckEmail.TextFontColorHover = "BFBFBF";
+            this.buttonCheckEmail.TextFontColorNormal = "#777777";
             this.buttonCheckEmail.Toggle = false;
             this.buttonCheckEmail.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonCheckEmail_MouseClick);
             // 
@@ -359,11 +368,10 @@ namespace Counter_Strike_Point_Blank
             // 
             this.buttonCheckID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.buttonCheckID.BackColor = System.Drawing.Color.Transparent;
-            this.buttonCheckID.ImageButton = ((System.Drawing.Image)(resources.GetObject("buttonCheckID.ImageButton")));
             this.buttonCheckID.ImageButtonToggle = null;
             this.buttonCheckID.ImagePositionActive = "0,0";
             this.buttonCheckID.ImagePositionDisabled = "0,0";
-            this.buttonCheckID.ImagePositionHover = "0,164";
+            this.buttonCheckID.ImagePositionHover = "0,60";
             this.buttonCheckID.ImagePositionNormal = "0,0";
             this.buttonCheckID.ImageTogglePositionActive = null;
             this.buttonCheckID.ImageTogglePositionDisabled = null;
@@ -372,14 +380,14 @@ namespace Counter_Strike_Point_Blank
             this.buttonCheckID.Location = new System.Drawing.Point(597, 101);
             this.buttonCheckID.Name = "buttonCheckID";
             this.buttonCheckID.Size = new System.Drawing.Size(62, 57);
-            this.buttonCheckID.SizeButton = "168, 164";
+            this.buttonCheckID.SizeButton = "62, 60";
             this.buttonCheckID.TabIndex = 0;
-            this.buttonCheckID.TextButton = null;
-            this.buttonCheckID.TextFont = null;
-            this.buttonCheckID.TextFontColorActive = null;
-            this.buttonCheckID.TextFontColorDisabled = null;
-            this.buttonCheckID.TextFontColorHover = null;
-            this.buttonCheckID.TextFontColorNormal = null;
+            this.buttonCheckID.TextButton = "CHECK";
+            this.buttonCheckID.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCheckID.TextFontColorActive = "#777777";
+            this.buttonCheckID.TextFontColorDisabled = "#777777";
+            this.buttonCheckID.TextFontColorHover = "BFBFBF";
+            this.buttonCheckID.TextFontColorNormal = "#777777";
             this.buttonCheckID.Toggle = false;
             this.buttonCheckID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonCheckID_MouseClick);
             // 
@@ -388,7 +396,6 @@ namespace Counter_Strike_Point_Blank
             this.picCreateAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.picCreateAccount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picCreateAccount.BackgroundImage")));
             this.picCreateAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.picCreateAccount.Location = new System.Drawing.Point(0, 0);
             this.picCreateAccount.Name = "picCreateAccount";
@@ -401,7 +408,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.btnBackToHome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnBackToHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnBackToHome.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnSignup.png");
             this.btnBackToHome.ImageButtonToggle = null;
             this.btnBackToHome.ImagePositionActive = "0,0";
             this.btnBackToHome.ImagePositionDisabled = "0,0";
@@ -431,7 +437,6 @@ namespace Counter_Strike_Point_Blank
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\backSignUp.png");
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(953, 649);
             this.Controls.Add(this.btnBackToHome);

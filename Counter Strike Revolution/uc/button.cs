@@ -41,33 +41,6 @@ namespace Evolved_Counter_Strike.uc
         {
             InitializeComponent();
         }
-        public Bitmap CropImage(Bitmap source, Rectangle section)
-        {
-            var bitmap = new Bitmap(section.Width, section.Height);
-            using (var g = Graphics.FromImage(bitmap))
-            {
-                g.DrawImage(source, 0, 0, section, GraphicsUnit.Pixel);
-                return bitmap;
-            }
-        }
-
-
-        public Bitmap GrayScaleFilter(Bitmap image)
-        {
-            Bitmap grayScale = new Bitmap(image.Width, image.Height);
-
-            for (Int32 y = 0; y < grayScale.Height; y++)
-                for (Int32 x = 0; x < grayScale.Width; x++)
-                {
-                    System.Drawing.Color c = image.GetPixel(x, y);
-
-                    Int32 gs = (Int32)(c.R * 0.3 + c.G * 0.59 + c.B * 0.11);
-
-                    grayScale.SetPixel(x, y, System.Drawing.Color.FromArgb(gs, gs, gs));
-                }
-            return grayScale;
-        }
-
         // Example use:     
 
         private void SetTextorPic(int i)
@@ -95,7 +68,7 @@ namespace Evolved_Counter_Strike.uc
             if (TextButton != null)
             {
 
-                bmp = new Bitmap(CropImage(new Bitmap(ImageButton), new Rectangle(new Point(Int32.Parse(Position1), Int32.Parse(Position2)), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1])))), new Size(this.Width, this.Height));
+                bmp = new Bitmap(CJDW.CropImage(new Bitmap(ImageButton), new Rectangle(new Point(Int32.Parse(Position1), Int32.Parse(Position2)), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1])))), new Size(this.Width, this.Height));
 
                 RectangleF rectf = new RectangleF(0, 0, bmp.Width, bmp.Height);
                 Graphics g = Graphics.FromImage(bmp);
@@ -125,7 +98,7 @@ namespace Evolved_Counter_Strike.uc
             }
             else
             {
-                bmp = CropImage(new Bitmap(ImageButton), new Rectangle(new Point(Int32.Parse(Position1), Int32.Parse(Position2)), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
+                bmp = CJDW.CropImage(new Bitmap(ImageButton), new Rectangle(new Point(Int32.Parse(Position1), Int32.Parse(Position2)), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
             }
         }
         private void Button_Load(object sender, EventArgs e)
@@ -152,7 +125,7 @@ namespace Evolved_Counter_Strike.uc
                     if (ImagePositionDisabled == null || ImagePositionDisabled == "")
                     {
                         SetTextorPic(0);
-                        btnDisabled = (Image)GrayScaleFilter(bmp);
+                        btnDisabled = (Image)CJDW.GrayScaleFilter(bmp);
                     }
                     else
                     {
@@ -174,32 +147,32 @@ namespace Evolved_Counter_Strike.uc
                 {
                     if (ImageTogglePositionNormal != null)
                     {
-                        btnNormalT = (Image)CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImageTogglePositionNormal.Split(',')[0]), Int32.Parse(ImageTogglePositionNormal.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
+                        btnNormalT = (Image)CJDW.CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImageTogglePositionNormal.Split(',')[0]), Int32.Parse(ImageTogglePositionNormal.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
 
                     }
                     else
-                        btnNormalT = (Image)CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImagePositionNormal.Split(',')[0]), Int32.Parse(ImagePositionNormal.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
+                        btnNormalT = (Image)CJDW.CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImagePositionNormal.Split(',')[0]), Int32.Parse(ImagePositionNormal.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
 
                     if (ImageTogglePositionHover != null)
-                        btnHoverT = (Image)CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImageTogglePositionHover.Split(',')[0]), Int32.Parse(ImageTogglePositionHover.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
+                        btnHoverT = (Image)CJDW.CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImageTogglePositionHover.Split(',')[0]), Int32.Parse(ImageTogglePositionHover.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
                     else
-                        btnHoverT = (Image)CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImagePositionHover.Split(',')[0]), Int32.Parse(ImagePositionHover.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
+                        btnHoverT = (Image)CJDW.CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImagePositionHover.Split(',')[0]), Int32.Parse(ImagePositionHover.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
 
 
                     if (ImageTogglePositionActive != null)
-                        btnActiveT = (Image)CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImageTogglePositionActive.Split(',')[0]), Int32.Parse(ImageTogglePositionActive.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
+                        btnActiveT = (Image)CJDW.CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImageTogglePositionActive.Split(',')[0]), Int32.Parse(ImageTogglePositionActive.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
                     else
-                        btnActiveT = (Image)CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImagePositionActive.Split(',')[0]), Int32.Parse(ImagePositionActive.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
+                        btnActiveT = (Image)CJDW.CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImagePositionActive.Split(',')[0]), Int32.Parse(ImagePositionActive.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
 
 
 
 
                     if (ImageTogglePositionDisabled == null && ImagePositionDisabled == null)
-                        btnDisabledT = (Image)GrayScaleFilter(CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImagePositionActive.Split(',')[0]), Int32.Parse(ImagePositionActive.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1])))));
+                        btnDisabledT = (Image)CJDW.GrayScaleFilter(CJDW.CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImagePositionActive.Split(',')[0]), Int32.Parse(ImagePositionActive.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1])))));
                     else if (ImageTogglePositionActive != null)
-                        btnDisabledT = (Image)CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImageTogglePositionDisabled.Split(',')[0]), Int32.Parse(ImageTogglePositionDisabled.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
+                        btnDisabledT = (Image)CJDW.CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImageTogglePositionDisabled.Split(',')[0]), Int32.Parse(ImageTogglePositionDisabled.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
                     else
-                        btnDisabledT = (Image)CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImagePositionDisabled.Split(',')[0]), Int32.Parse(ImagePositionDisabled.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
+                        btnDisabledT = (Image)CJDW.CropImage(new Bitmap(ImageButtonToggle), new Rectangle(new Point(Int32.Parse(ImagePositionDisabled.Split(',')[0]), Int32.Parse(ImagePositionDisabled.Split(',')[1])), new Size(Int32.Parse(SizeButton.Split(',')[0]), Int32.Parse(SizeButton.Split(',')[1]))));
 
                     if (this.Enabled == false)
                         img2.Image = btnDisabledT;

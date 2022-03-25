@@ -65,6 +65,19 @@ namespace Counter_Strike_Point_Blank
             ((System.ComponentModel.ISupportInitialize)(this.progressTotal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCheck)).BeginInit();
             this.SuspendLayout();
+
+            this.picCheck.BackgroundImage = new Bitmap(CJDW.CropImage(new Bitmap(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheck.png")), new Rectangle(new Point(2, 490), new Size(221, 158))), new Size(508, 451));
+            this.chckboxLogin.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheckBoxLogin.png");
+            this.chckboxLogin.ImageButtonToggle = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheckBoxLogin.png");
+            this.btnLogin2.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnLogin.png");
+            this.btnLogout.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnLogout.png");
+            this.exitLogin.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCloseLogin.png");
+            this.btnLogin.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnLogin.png");
+            this.btnMinimize.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnMinimize.png");
+            this.btnClose.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnClose.png");
+            this.btnCheck.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheck.png");
+            this.btnStart.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnStart.png");
+            this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\backLauncher.png");
             // 
             // picMoverUp
             // 
@@ -202,10 +215,10 @@ namespace Counter_Strike_Point_Blank
             // picCheck
             // 
             this.picCheck.BackColor = System.Drawing.Color.Transparent;
-            this.picCheck.Image = ((System.Drawing.Image)(resources.GetObject("picCheck.Image")));
-            this.picCheck.Location = new System.Drawing.Point(507, 450);
+            this.picCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picCheck.Location = new System.Drawing.Point(508, 451);
             this.picCheck.Name = "picCheck";
-            this.picCheck.Size = new System.Drawing.Size(108, 78);
+            this.picCheck.Size = new System.Drawing.Size(106, 76);
             this.picCheck.TabIndex = 13;
             this.picCheck.TabStop = false;
             // 
@@ -258,8 +271,6 @@ namespace Counter_Strike_Point_Blank
             // 
             // chckboxLogin
             // 
-            this.chckboxLogin.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheckBoxLogin.png");
-            this.chckboxLogin.ImageButtonToggle = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheckBoxLogin.png");
             this.chckboxLogin.ImagePositionActive = "0,26";
             this.chckboxLogin.ImagePositionDisabled = "0,0";
             this.chckboxLogin.ImagePositionHover = "0,13";
@@ -287,7 +298,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.btnLogin2.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogin2.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnLogin.png");
             this.btnLogin2.ImageButtonToggle = null;
             this.btnLogin2.ImagePositionActive = "0,48";
             this.btnLogin2.ImagePositionDisabled = "";
@@ -316,7 +326,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.btnLogout.BackColor = System.Drawing.Color.Transparent;
             this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogout.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnLogout.png");
             this.btnLogout.ImageButtonToggle = null;
             this.btnLogout.ImagePositionActive = "0,48";
             this.btnLogout.ImagePositionDisabled = "";
@@ -345,7 +354,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.exitLogin.BackColor = System.Drawing.Color.Transparent;
             this.exitLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.exitLogin.ImageButton = ((System.Drawing.Image)(resources.GetObject("exitLogin.ImageButton")));
             this.exitLogin.ImageButtonToggle = null;
             this.exitLogin.ImagePositionActive = "0,0";
             this.exitLogin.ImagePositionDisabled = "0,0";
@@ -374,7 +382,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogin.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnLogin.png");
             this.btnLogin.ImageButtonToggle = null;
             this.btnLogin.ImagePositionActive = "0,48";
             this.btnLogin.ImagePositionDisabled = "";
@@ -403,7 +410,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMinimize.ImageButton = ((System.Drawing.Image)(resources.GetObject("btnMinimize.ImageButton")));
             this.btnMinimize.ImageButtonToggle = null;
             this.btnMinimize.ImagePositionActive = "0,104";
             this.btnMinimize.ImagePositionDisabled = "0,0";
@@ -431,7 +437,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClose.ImageButton = ((System.Drawing.Image)(resources.GetObject("btnClose.ImageButton")));
             this.btnClose.ImageButtonToggle = null;
             this.btnClose.ImagePositionActive = "0,104";
             this.btnClose.ImagePositionDisabled = "0,0";
@@ -459,7 +464,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.btnCheck.BackColor = System.Drawing.Color.Transparent;
             this.btnCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCheck.ImageButton = ((System.Drawing.Image)(resources.GetObject("btnCheck.ImageButton")));
             this.btnCheck.ImageButtonToggle = null;
             this.btnCheck.ImagePositionActive = "2,327";
             this.btnCheck.ImagePositionDisabled = "2,490";
@@ -487,7 +491,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.btnStart.BackColor = System.Drawing.Color.Transparent;
             this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnStart.ImageButton = ((System.Drawing.Image)(resources.GetObject("btnStart.ImageButton")));
             this.btnStart.ImageButtonToggle = null;
             this.btnStart.ImagePositionActive = "2,327";
             this.btnStart.ImagePositionDisabled = "2,490";
@@ -515,7 +518,6 @@ namespace Counter_Strike_Point_Blank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\backLauncher.png");
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(790, 531);
             this.ControlBox = false;

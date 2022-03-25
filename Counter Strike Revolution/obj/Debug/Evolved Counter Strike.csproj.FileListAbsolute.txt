@@ -1,0 +1,33 @@
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved Counter Strike.csprojAssemblyReference.cache
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.CSPBLauncher.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.Background.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.MainLoading.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved_Counter_Strike.Properties.Resources.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.Form1.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\CustomButton.UCButton.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.Wait_2.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.wait.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved Counter Strike.csproj.GenerateResource.cache
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved Counter Strike.csproj.CoreCompileInputs.cache
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\bin\Debug\Evolved Counter Strike.exe.config
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\bin\Debug\Evolved Counter Strike.exe
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\bin\Debug\Evolved Counter Strike.pdb
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved Counter Strike.exe
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved Counter Strike.pdb
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved Counter Strike.csprojAssemblyReference.cache
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.CSPBLauncher.resources
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.Background.resources
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.MainLoading.resources
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved_Counter_Strike.Properties.Resources.resources
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.Form1.resources
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\CustomButton.UCButton.resources
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.Wait_2.resources
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.wait.resources
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved Counter Strike.csproj.GenerateResource.cache
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved Counter Strike.csproj.CoreCompileInputs.cache
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved Counter Strike.exe
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved Counter Strike.pdb
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\bin\Debug\Evolved Counter Strike.exe.config
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\bin\Debug\Evolved Counter Strike.exe
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\bin\Debug\Evolved Counter Strike.pdb
+C:\Users\Marni\Desktop\New folder\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Evolved_Counter_Strike.uc.button.resources

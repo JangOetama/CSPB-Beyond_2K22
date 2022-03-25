@@ -1,0 +1,16 @@
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\bin\Debug\Counter Strike Revolution.exe.config
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\bin\Debug\Counter Strike Revolution.exe
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\bin\Debug\Counter Strike Revolution.pdb
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.CSPBLauncher.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.Properties.Resources.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter Strike Revolution.csproj.GenerateResource.cache
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter Strike Revolution.csproj.CoreCompileInputs.cache
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter Strike Revolution.exe
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter Strike Revolution.pdb
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\CustomButton.UCButton.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter Strike Revolution.csprojAssemblyReference.cache
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.wait.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.Wait_2.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.MainLoading.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.Form1.resources
+C:\Users\NHBC\source\repos\Counter Strike Revolution\Counter Strike Revolution\obj\Debug\Counter_Strike_Revolution.Shop.resources

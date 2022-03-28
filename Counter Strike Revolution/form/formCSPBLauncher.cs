@@ -15,6 +15,7 @@ namespace Counter_Strike_Point_Blank
     public partial class formCSPBLauncher : Form
     {
         private bool mouseDown;
+        private bool nointernet;
         private Point lastLocation;
         public formCSPBLauncher()
         {
@@ -43,6 +44,7 @@ namespace Counter_Strike_Point_Blank
                     webCSPB.DocumentCompleted += (webSender, webE) =>
                     {
                         webCSPB.Visible = true;
+                        nointernet = false;
                     };
                 }
 
@@ -50,6 +52,7 @@ namespace Counter_Strike_Point_Blank
             catch
             {
                 webCSPB.Visible = false;
+                nointernet = false;
             }
             
         }
@@ -254,7 +257,7 @@ namespace Counter_Strike_Point_Blank
             btnLogin.Visible = true;
             btnMinimize.Visible = true;
             btnClose.Visible = true;
-            webCSPB.Visible = true;
+
             lblStatus.Visible = true;
             lblTotal.Visible = true;
             progressTotal.Visible = true;
@@ -266,6 +269,9 @@ namespace Counter_Strike_Point_Blank
             picCheck.Visible = true;
             picStart.Visible = true;
             picMoverUp.Size = new Size(793, 26);
+
+            if (nointernet == false)
+            webCSPB.Visible = true;
         }
 
         private void Label1_MouseClick(object sender, MouseEventArgs e)
@@ -304,7 +310,6 @@ namespace Counter_Strike_Point_Blank
                 this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\backLauncher.png");
                 btnMinimize.Visible = true;
                 btnClose.Visible = true;
-                webCSPB.Visible = true;
                 lblStatus.Visible = true;
                 lblTotal.Visible = true;
                 progressTotal.Visible = true;
@@ -316,6 +321,8 @@ namespace Counter_Strike_Point_Blank
                 picCheck.Visible = true;
                 picStart.Visible = true;
                 picMoverUp.Size = new Size(793, 26);
+                if (nointernet == false)
+                    webCSPB.Visible = true;
             }
         }
 

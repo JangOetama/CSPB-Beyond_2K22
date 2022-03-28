@@ -91,6 +91,7 @@ namespace Counter_Strike_Point_Blank
             this.btnCheck.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheck.png");
             this.btnStart.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnStart.png");
             this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\backLauncher.png");
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             // 
             // picMoverUp
             // 
@@ -570,7 +571,6 @@ namespace Counter_Strike_Point_Blank
             this.Controls.Add(this.picStart);
             this.Controls.Add(this.picMoverDown);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "formCSPBLauncher";

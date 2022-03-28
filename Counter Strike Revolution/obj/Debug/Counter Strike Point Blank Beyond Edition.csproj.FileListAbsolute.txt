@@ -71,7 +71,6 @@ C:\Users\Marni\Documents\GitHub\CSPB-Launcher\Counter Strike Revolution\obj\Debu
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\bin\Debug\Counter Strike Point Blank.exe.config
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\bin\Debug\Counter Strike Point Blank.exe
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\bin\Debug\Counter Strike Point Blank.pdb
-C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter Strike Point Blank Beyond Edition.csprojAssemblyReference.cache
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter_Strike_Point_Blank.formCSPBLauncher.resources
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter_Strike_Point_Blank.formBackground.resources
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter_Strike_Point_Blank.formMainLoading.resources
@@ -85,3 +84,4 @@ C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter Strike Point Blank Beyond Edition.csproj.CoreCompileInputs.cache
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter Strike Point Blank.exe
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter Strike Point Blank.pdb
+C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter Strike Point Blank Beyond Edition.csprojAssemblyReference.cache

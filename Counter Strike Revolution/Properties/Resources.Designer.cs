@@ -63,7 +63,7 @@ namespace CSPB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon IconGroup154 {
+        internal static System.Drawing.Icon iconCSPB {
             get {
                 object obj = ResourceManager.GetObject("IconGroup154", resourceCulture);
                 return ((System.Drawing.Icon)(obj));

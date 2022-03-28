@@ -91,7 +91,7 @@ namespace Counter_Strike_Point_Blank
             this.btnCheck.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheck.png");
             this.btnStart.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnStart.png");
             this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\backLauncher.png");
-            this.Icon = new Icon(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\IconGroup154.ico");
+            this.Icon = (CSPB.Properties.Resources.iconCSPB);
             // 
             // picMoverUp
             // 
@@ -574,7 +574,7 @@ namespace Counter_Strike_Point_Blank
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "formCSPBLauncher";
-            this.ShowIcon = false;
+            this.ShowIcon = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CSPBLauncher";
             ((System.ComponentModel.ISupportInitialize)(this.picMoverUp)).EndInit();

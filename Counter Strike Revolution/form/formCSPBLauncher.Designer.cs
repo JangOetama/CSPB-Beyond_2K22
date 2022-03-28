@@ -91,7 +91,7 @@ namespace Counter_Strike_Point_Blank
             this.btnCheck.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnCheck.png");
             this.btnStart.ImageButton = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\btnStart.png");
             this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\Launcher\\backLauncher.png");
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = new Icon(AppDomain.CurrentDomain.BaseDirectory + "\\Pack\\Gui\\IconGroup154.ico");
             // 
             // picMoverUp
             // 

@@ -19,8 +19,9 @@ namespace Counter_Strike_Point_Blank
             Application.SetCompatibleTextRenderingDefault(false);
            if (CJDW.GetFile("Settings.ini", "Setting", "Page") == "Kadal")
             {
-                Application.Run(new formWait());
-                Application.Run(new formCSPBLauncher());
+                //Application.Run(new formWait());
+                //Application.Run(new formCSPBLauncher());
+                Application.Run(new ExampleShop());
 
             }
            else

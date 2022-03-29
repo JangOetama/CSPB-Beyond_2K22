@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="form\ExampleShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\ExampleShop.Designer.cs">
+      <DependentUpon>ExampleShop.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\formCSPBLauncher.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,8 +139,13 @@
     <Compile Include="form\formWait.Designer.cs">
       <DependentUpon>formWait.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="form\ExampleShop.resx">
+      <DependentUpon>ExampleShop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\formCSPBLauncher.resx">
       <DependentUpon>formCSPBLauncher.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="form\formBackground.resx">
       <DependentUpon>formBackground.cs</DependentUpon>
@@ -142,6 +153,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form\formMainLoading.resx">
       <DependentUpon>formMainLoading.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="form\formRegistry.resx">
       <DependentUpon>formRegistry.cs</DependentUpon>

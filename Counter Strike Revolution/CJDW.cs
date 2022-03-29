@@ -17,7 +17,12 @@ class CJDW
         IEnumerable<string> results = File.ReadAllLines(Path).Where(l => l.StartsWith(Section + " " + Key));
         return results.ToArray()[0].Split(' ')[2];
     }
-
+    public static string GetFileNoSection(string Path, string Key)
+    {
+        string a = Key;
+        IEnumerable<string> results = File.ReadAllLines(Path).Where(l => l.StartsWith(a));
+        return results.ToArray()[0].Split(' ')[1];
+    }
     public static void ChangeFile(string Path, string Section, string Key, string Value)
     {
         var index = Array.FindIndex(File.ReadAllLines(Path).ToArray(), row => row.StartsWith(Section + " " + Key));
@@ -25,18 +30,6 @@ class CJDW
         arrLine[index] = Section + " " + Key + " " + Value;
         File.WriteAllLines(Path, arrLine);
     }
-    public static void SetFile(string Path, string Section, string Key, string Value)
-    {
-        File.WriteAllText(Path, File.ReadAllText(Path) + "\r\n" + Section + " " + Key + " " + Value);
-    }
-
-    public static string GetFileNoSection(string Path, string Key)
-    {
-        string a = Key;
-        IEnumerable<string> results = File.ReadAllLines(Path).Where(l => l.StartsWith(a));
-        return results.ToArray()[0].Split(' ')[1];
-    }
-
     public static void ChangeFileNoSection(string Path, string Key, string Value)
     {
         if (!File.Exists(Path))
@@ -48,6 +41,10 @@ class CJDW
         string[] arrLine = File.ReadAllLines(Path);
         arrLine[index] = Key + " " + Value;
         File.WriteAllLines(Path, arrLine);
+    }
+    public static void SetFile(string Path, string Section, string Key, string Value)
+    {
+        File.WriteAllText(Path, File.ReadAllText(Path) + "\r\n" + Section + " " + Key + " " + Value);
     }
     public static void SetFileNoSection(string Path, string Key, string Value)
     {
@@ -119,5 +116,26 @@ class CJDW
                 grayScale.SetPixel(x, y, System.Drawing.Color.FromArgb(gs, gs, gs));
             }
         return grayScale;
+    }
+
+    public static string ReadAMXXConfig(string Path, string Value, string Section)
+    {
+        return
+    }
+    public static int GetLineNumber(string Path, string lineToFind)
+    {
+        int lineNum = 0;
+        string line;
+        System.IO.StreamReader file = new System.IO.StreamReader(Path);
+        while ((line = file.ReadLine()) != null)
+        {
+            lineNum++;
+            if (line.Contains(lineToFind))
+            {
+                return lineNum;
+            }
+        }
+        file.Close();
+        return -1;
     }
 }

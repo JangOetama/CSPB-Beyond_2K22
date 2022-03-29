@@ -85,3 +85,4 @@ C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter Strike Point Blank.exe
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter Strike Point Blank.pdb
 C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter Strike Point Blank Beyond Edition.csprojAssemblyReference.cache
+C:\Users\Marni\Desktop\Github\CSPB-Beyond_Edition\Counter Strike Revolution\obj\Debug\Counter_Strike_Point_Blank.ExampleShop.resources

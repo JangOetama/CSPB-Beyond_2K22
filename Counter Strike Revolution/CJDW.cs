@@ -117,20 +117,24 @@ class CJDW
             }
         return grayScale;
     }
+    public static string GetAmxxConfig(string Path, string Command, string Section)
+    {
+        string[] line = File.ReadLines(Path).Skip(GetLineNumber(Path, Command)-1).Take(1).First().Split('[');
 
-    public static string ReadAMXXConfig(string Path, string Value, string Section)
-    {
-        return
+        IEnumerable<string> results = line.Where(l => l.StartsWith(Section + "]"));
+        return results.ToArray()[0].Split(']')[1];
+
     }
-    public static int GetLineNumber(string Path, string lineToFind)
+    public static int GetLineNumber(string Path, string command)
     {
+        command = "[command]" + command + "[";
         int lineNum = 0;
         string line;
         System.IO.StreamReader file = new System.IO.StreamReader(Path);
         while ((line = file.ReadLine()) != null)
         {
             lineNum++;
-            if (line.Contains(lineToFind))
+            if (line.Contains(command))
             {
                 return lineNum;
             }

@@ -1,0 +1,55 @@
+;=======================================;
+;	Counter-Strike Point Blank	;
+;=======================================;
+
+[name]Trainee[exp_target]0[bonus_points]1000
+[name]Senior Trainee[exp_target]3000[bonus_points]1000
+[name]Private[exp_target]4000[bonus_points]2000
+[name]Corporal[exp_target]5000[bonus_points]3000
+[name]Sergeant[exp_target]7000[bonus_points]4000
+[name]Staff Sgt. Grade 1[exp_target]9000[bonus_points]4000
+[name]Staff Sgt. Grade 2[exp_target]11000[bonus_points]5000
+[name]Staff Sgt. Grade 3[exp_target]13000[bonus_points]6000
+[name]Sgt. 1st Class Grade 1[exp_target]16000[bonus_points]6000
+[name]Sgt. 1st Class Grade 2[exp_target]19000[bonus_points]7000
+[name]Sgt. 1st Class Grade 3[exp_target]21000[bonus_points]8000
+[name]Sgt. 1st Class Grade 4[exp_target]24000[bonus_points]9000
+[name]Master Sgt. Grade 1[exp_target]27000[bonus_points]9000
+[name]Master Sgt. Grade 2[exp_target]30000[bonus_points]10000
+[name]Master Sgt. Grade 3[exp_target]33000[bonus_points]11000
+[name]Master Sgt. Grade 4[exp_target]36000[bonus_points]12000
+[name]Master Sgt. Grade 5[exp_target]41000[bonus_points]13000
+[name]2nd Lt. Grade 1[exp_target]46000[bonus_points]13000
+[name]2nd Lt. Grade 2[exp_target]51000[bonus_points]14000
+[name]2nd Lt. Grade 3[exp_target]56000[bonus_points]15000
+[name]2nd Lt. Grade 4[exp_target]62000[bonus_points]16000
+[name]1st Lt. Grade 1[exp_target]68000[bonus_points]17000
+[name]1st Lt. Grade 2[exp_target]74000[bonus_points]18000
+[name]1st Lt. Grade 3[exp_target]80000[bonus_points]20000
+[name]1st Lt. Grade 4[exp_target]86000[bonus_points]20000
+[name]1st Lt. Grade 5[exp_target]93000[bonus_points]20000
+[name]Capt. Grade 1[exp_target]100000[bonus_points]21000
+[name]Capt. Grade 2[exp_target]107000[bonus_points]22000
+[name]Capt. Grade 3[exp_target]114000[bonus_points]22000
+[name]Capt. Grade 4[exp_target]121000[bonus_points]22000
+[name]Capt. Grade 5[exp_target]151000[bonus_points]20000
+[name]Major Grade 1[exp_target]181000[bonus_points]22000
+[name]Major Grade 2[exp_target]211000[bonus_points]23000
+[name]Major Grade 3[exp_target]241000[bonus_points]24000
+[name]Major Grade 4[exp_target]271000[bonus_points]24000
+[name]Major Grade 5[exp_target]311000[bonus_points]24000
+[name]Lt. Col. Grade 1[exp_target]351000[bonus_points]25000
+[name]Lt. Col. Grade 2[exp_target]391000[bonus_points]25000
+[name]Lt. Col. Grade 3[exp_target]431000[bonus_points]27000
+[name]Lt. Col. Grade 4[exp_target]471000[bonus_points]27000
+[name]Lt. Col. Grade 5[exp_target]521000[bonus_points]28000
+[name]Col. Grade 1[exp_target]571000[bonus_points]30000
+[name]Col. Grade 2[exp_target]621000[bonus_points]31000
+[name]Col. Grade 3[exp_target]671000[bonus_points]32000
+[name]Col. Grade 4[exp_target]721000[bonus_points]33000
+[name]Col. Grade 5[exp_target]781000[bonus_points]34000
+[name]Brigadier[exp_target]4845000[bonus_points]35000
+[name]Major General[exp_target]5200000[bonus_points]38000
+[name]Lt. General[exp_target]13700000[bonus_points]44000
+[name]General[exp_target]53000000[bonus_points]47000
+[name]Commander[exp_target]15000000[bonus_points]50000

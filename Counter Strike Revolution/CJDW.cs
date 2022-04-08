@@ -117,24 +117,33 @@ class CJDW
             }
         return grayScale;
     }
-    public static string GetAmxxConfig(string Path, string Command, string Section)
+    public static string GetAmxxConfig(string Path, string Section, string Value, string GetValueBySection)
     {
-        string[] line = File.ReadLines(Path).Skip(GetLineNumber(Path, Command)-1).Take(1).First().Split('[');
+        string[] line = File.ReadLines(Path).Skip(GetLineNumber(Path, Value, Section) -1).Take(1).First().Split('[');
 
-        IEnumerable<string> results = line.Where(l => l.StartsWith(Section + "]"));
+        IEnumerable<string> results = line.Where(l => l.StartsWith(GetValueBySection + "]"));
         return results.ToArray()[0].Split(']')[1];
 
     }
-    public static int GetLineNumber(string Path, string command)
+    public static string GetAmxxConfigNoCommand(string Path, string Section, int line)
     {
-        command = "[command]" + command + "[";
+
+        string[] line2 = File.ReadLines(Path).Skip(line).Take(1).First().Split('[');
+
+        IEnumerable<string> results = line2.Where(l => l.StartsWith(Section + "]"));
+        return results.ToArray()[0].Split(']')[1];
+
+    }
+    public static int GetLineNumber(string Path, string Value, string Section)
+    {
+        Value = "["+ Section + "]" + Value + "[";
         int lineNum = 0;
         string line;
         System.IO.StreamReader file = new System.IO.StreamReader(Path);
         while ((line = file.ReadLine()) != null)
         {
             lineNum++;
-            if (line.Contains(command))
+            if (line.Contains(Value))
             {
                 return lineNum;
             }
@@ -142,4 +151,5 @@ class CJDW
         file.Close();
         return -1;
     }
+  
 }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 // Change this to match your program's normal namespace
@@ -13,15 +14,8 @@ class CJDW
 {
     public static string GetFile(string Path, string Section, string Key)
     {
-
         IEnumerable<string> results = File.ReadAllLines(Path).Where(l => l.StartsWith(Section + " " + Key));
         return results.ToArray()[0].Split(' ')[2];
-    }
-    public static string GetFileNoSection(string Path, string Key)
-    {
-        string a = Key;
-        IEnumerable<string> results = File.ReadAllLines(Path).Where(l => l.StartsWith(a));
-        return results.ToArray()[0].Split(' ')[1];
     }
     public static void ChangeFile(string Path, string Section, string Key, string Value)
     {
@@ -30,21 +24,23 @@ class CJDW
         arrLine[index] = Section + " " + Key + " " + Value;
         File.WriteAllLines(Path, arrLine);
     }
-    public static void ChangeFileNoSection(string Path, string Key, string Value)
-    {
-        if (!File.Exists(Path))
-        {
-            File.Create(Path).Close();
-        }
-
-        var index = Array.FindIndex(File.ReadAllLines(Path).ToArray(), row => row.StartsWith(Key));
-        string[] arrLine = File.ReadAllLines(Path);
-        arrLine[index] = Key + " " + Value;
-        File.WriteAllLines(Path, arrLine);
-    }
     public static void SetFile(string Path, string Section, string Key, string Value)
     {
         File.WriteAllText(Path, File.ReadAllText(Path) + "\r\n" + Section + " " + Key + " " + Value);
+    }
+    public static string GetFileNoSection(string Path, string Key)
+    {
+        var match = Regex.Match(File.ReadAllText(Path), @""+ Key + @"\s+(.*)");
+        return match.Groups[1].ToString();
+    }
+    public static void ChangeFileNoSection(string Path, string Key, string Value)
+    {
+        if (!File.Exists(Path))
+            File.Create(Path).Close();
+
+        string text = Regex.Replace(File.ReadAllText(Path), @"(" + Key + @"\s+)(.*)", "$1"+Value, RegexOptions.Multiline); //note switch to interpolated strings
+        File.WriteAllText(Path, text);
+
     }
     public static void SetFileNoSection(string Path, string Key, string Value)
     {
@@ -54,8 +50,6 @@ class CJDW
         }
 
         File.WriteAllText(Path, File.ReadAllText(Path) + "\r\n" + Key + " " + Value);
-
-
     }
     public static void Rescale(Form form, bool stretch)
     {
@@ -119,19 +113,14 @@ class CJDW
     }
     public static string GetAmxxConfig(string Path, string Section, string Value, string GetValueBySection)
     {
-        string[] line = File.ReadLines(Path).Skip(GetLineNumber(Path, Value, Section) -1).Take(1).First().Split('[');
-
-        IEnumerable<string> results = line.Where(l => l.StartsWith(GetValueBySection + "]"));
-        return results.ToArray()[0].Split(']')[1];
-
+        var match = Regex.Match(File.ReadAllText(Path), @"(\[.*?\[" + Section + @"\]" + Value + @".*$)").Groups[1].ToString();
+        var match2 = Regex.Match(match, @"\[" + GetValueBySection + @"\](.*?)\[");
+        return match2.Groups[1].ToString();
     }
     public static string GetAmxxConfigNoCommand(string Path, string Section, int line)
     {
-
-        string[] line2 = File.ReadLines(Path).Skip(line).Take(1).First().Split('[');
-
-        IEnumerable<string> results = line2.Where(l => l.StartsWith(Section + "]"));
-        return results.ToArray()[0].Split(']')[1];
+        var match = Regex.Match(File.ReadLines(Path).Skip(line).Take(1).First(), @"\["+ Section + @"\](.*?)\[");
+        return match.Groups[1].ToString();
 
     }
     public static int GetLineNumber(string Path, string Value, string Section)
